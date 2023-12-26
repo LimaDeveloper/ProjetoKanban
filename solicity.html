@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_solicity/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/imag_k.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Solicitar</h1>
+                    </div>
+                   
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="kanban">Local</label>
+                        <input id="kanban" class="required" type="text" name="kanban" placeholder="Informe o local " oninput="kanbanValidate()" required onkeyup="this.value = this.value.toUpperCase();">
+                        <span class="span-required">Kanban não localizado, digite corretamente.</span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cemb">Informe o Código</label>
+                        <input id="cemb" class="required" type="text" name="cemb" placeholder="22222222" required>
+                        <span class="span-required">Informe o Código</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="pn">Material</label>
+                        <input id="pn" class="required" type="text" name="pn" placeholder="Informe o Material"  autocomplete="off" required onkeyup="this.value = this.value.toUpperCase();">
+                        <span class="span-required">PN não cadastrado</span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Quantidade</label>
+                        <input id="number" class="required" type="number" name="number" placeholder="Quantidade requerida" required>
+                        <span class="span-required">Informe a quantidade requerida.</span>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="data">Data</label>
+                        <input id="data" class="required" type="date" name="data" placeholder="Digite sua senha" required>
+                        <span class="span-required">Informe a data de pagamento</span>
+                    </div>
+                </div>
+
+               
+
+                <div class="continue-button">
+                    <button id="btnSearch"><a href="#">Enviar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="javascript_solicitar/script_form.js"></script>
+</html>
